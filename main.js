@@ -7,3 +7,11 @@ document.addEventListener("DOMContentLoaded", function () {
         loop: true
     });
 });
+
+const externalLink = document.getElementById("external-link");
+
+
+externalLink.addEventListener("click", function () {
+    // Redirect to the specified URL when clicked
+    window.location.href = this.href;
+});
